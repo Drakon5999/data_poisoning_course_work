@@ -56,4 +56,4 @@ del /F %TEX_SOURCE%.pdf
 goto exit
 
 :exit
-PAUSE
+
