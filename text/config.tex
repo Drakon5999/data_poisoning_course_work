@@ -11,11 +11,9 @@
 % ВАЖНО: команда \include не поддерживает включение файлов, в которых уже содержится команда \include,
 % т.е. не возможен рекурсивный вызов \include
 \newcommand*{\Source}{
-    \include{mainfiles/0-goals}
-    \include{mainfiles/1-intro}
+    \include{mainfiles/0-intro}
+    \include{mainfiles/1-goals}
     \include{mainfiles/3-poisoning-attacks}
-    \include{mainfiles/4-backdoor-attacks}
-    \include{mainfiles/5-defense}
     \include{mainfiles/6-practical-results}
     \include{mainfiles/7-conclusion}
 }
@@ -74,7 +72,7 @@
     % ведущий научный сотрудник%
     % старший научный сотрудник%
     % научный сотрудник%
-    младший научный сотрудник%
+    % младший научный сотрудник%
 }
 %% учёная степень научного руководителя
 \def\AcademicDegree{%
@@ -82,7 +80,7 @@
     % д.т.н.%
     % к.ф.-м.н.%
     % к.т.н.%
-    без степени%
+    % без степени%
 }
 
 % Информация об организации, в которой выполнена работа
@@ -108,8 +106,8 @@
 %%%% и выводится полезная информация о том
 %%%% какие строки вылезают за границы документа, что удобно для борьбы с ними
 \def\Status{%
-    % draft%
-    final%
+    draft%
+    % final%
 }
 
 %%%% Включает и выключает подпись <<С текстом работы ознакомлен>>
